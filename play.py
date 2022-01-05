@@ -1,5 +1,7 @@
+###Initilization
 import tellurium as te
 import csv
+
 ini1 = '''
  A -> B; kfAB*A;
    B -> A; kbAB*B;
@@ -36,19 +38,17 @@ ini3 = '''
    at(time > 10) : A = 10;
    
 '''
-   
+###Simulation
 
 r = te.loada(ini1+ini2+ini3)
-r.simulate(0,5,10000)
-r.resetAll()
 result = r.simulate (0,20,10000)
-r.plot()
+r.plot() #Just to have the general idea
 
-
-with open('Desktop/a.csv', 'w') as csvfile:
+###Output results, and the setup info
+with open('simulation_result.csv', 'w') as csvfile:
   writer = csv.writer(csvfile)
   [writer.writerow(r) for r in result]
 
-f=open("Desktop/setup.txt","w")
+f=open("simulation_setup.txt","w")
 f.write(ini2)
 f.close()

@@ -1,5 +1,10 @@
 ###Initilization
 library(dplyr)
+library(ggplot2)
+
+options(max.print=3000)
+graphics.off()
+par(mar=c(1,1,1,1))
 
 ###Load simualtion data
 dat=read.csv("simulation_result.csv",header = F)

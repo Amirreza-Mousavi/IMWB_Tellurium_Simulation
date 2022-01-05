@@ -1,6 +1,7 @@
 ###Initilization
 import tellurium as te
 import csv
+from matplotlib import pyplot as plt
 
 ini1 = '''
  A -> B; kfAB*A;
@@ -44,7 +45,9 @@ r = te.loada(ini1+ini2+ini3)
 result = r.simulate (0,20,10000)
 r.plot() #Just to have the general idea
 
-###Output results, and the setup info
+###Output the plot, results, and the setup info.
+plt.savefig("concentrations_vs_time.png")
+
 with open('simulation_result.csv', 'w') as csvfile:
   writer = csv.writer(csvfile)
   [writer.writerow(r) for r in result]

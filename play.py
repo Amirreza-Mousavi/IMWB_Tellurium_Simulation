@@ -3,6 +3,12 @@ import tellurium as te
 import csv
 from matplotlib import pyplot as plt
 
+K=1
+kst=1
+kha=1
+kfBC=1
+
+
 ini1 = '''
  A -> B; kfAB*A;
    B -> A; kbAB*B;
@@ -20,17 +26,8 @@ ini1 = '''
    C -> B; kbBC*C; 
 '''
 
-ini2 = '''
-kfAB = 0.5; kbAB = 1;
-
-kfCD = 1; kbCD = 1; 
-kfAC = 1; kfBD = 1;
-
-kfBC = 1;kbBC = 1;
-
-kbAC = (kbAB * kbBC * kfAC)/(kfAB * kfBC)
-kbBD = (kbBC * kbCD * kfBD)/(kfBC * kfCD)
-'''
+ini2 = "kfAB = " + str(kst) + "; kbCD = kfAB; kfCD = " + str(kst/K) + "; kbAB = kfCD; kfBD = " + str(kha/K) + ";  kbAC = kfBD; kfAC = " + str(kha) + "; kbBD = kfAC; kfBC = "+ str(kfBC) +"; kbBC = kfBC;"
+     
 
 ini3 = '''
  

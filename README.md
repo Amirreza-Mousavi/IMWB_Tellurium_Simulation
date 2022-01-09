@@ -21,10 +21,9 @@ If you haven't installed them in your system yet, open Rstudio and run the follo
 
 ```install.packages("ggplot2")```
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Order of Scripts
-First run play.py and then run play.R, preferably in Rstudio to obtain results. 
+First run `play.py` and then run `play.R`, preferably in Rstudio to obtain results. 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

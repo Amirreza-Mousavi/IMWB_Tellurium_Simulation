@@ -1,6 +1,5 @@
-# IMWB_Tellurium_Simulation
+# Metabolic_Network_Tellurium_Simulation
 
-This repository contains the scripts that were used to perform the first in-silico experiment, comprised of five individual setups. The goal of this repository is to plot flow of BC during the transition time. We can figure out that flow of BC is zero in the Ideal Metabolic Wheatstone Bridges and not zero in the case of non-Ideal Metabolic Wheatstone Bridges
 
 ## Installation
 

@@ -32,10 +32,9 @@ flow=mutate(dat,FAB=(RfAB-RbAB),
 flow=select(flow,time,FAB,FAC,FBD,FCD,FBC)
 
 ###Select the disruption time
-flow=filter(flow,time>10)
-flow=filter(flow,time<15)
+#flow=filter(flow,time>10)
+#flow=filter(flow,time<15)
 
-###Output plots as pdf. Specially Look at the last plot.
 pdf("results.pdf",width = 16,height = 9)
 plot(flow$time,flow$FAB)
 plot(flow$time,flow$FAC)

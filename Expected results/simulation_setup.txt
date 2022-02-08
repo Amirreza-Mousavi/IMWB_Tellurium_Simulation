@@ -1,0 +1,8 @@
+
+
+   kfAB=5; kbAB=2;
+   kfAC=1; kbAC=2;
+   kfBD=5; kbBD=3;
+   kfCD=3; kbCD=1;
+   kfBC=10;kbBC=10;
+   

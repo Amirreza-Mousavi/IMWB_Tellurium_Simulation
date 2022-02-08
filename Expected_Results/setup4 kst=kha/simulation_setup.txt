@@ -1,1 +1,0 @@
-kfAB = 1.4; kbCD = kfAB; kfCD = 6.999999999999999; kbAB = kfCD; kfBD = 6.999999999999999;  kbAC = kfBD; kfAC = 1.4; kbBD = kfAC; kfBC = 0.7; kbBC = kfBC;
